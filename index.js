@@ -31,8 +31,8 @@ module.exports = (items = []) => {
                 }
                 emit(null, item)
             },
-            updateItem: (item) => emit(item, Object.assign(items[item.id] || {}, item)),
-            deleteItem: (id) => {
+            updateItem: item => emit(item, Object.assign(items[item.id] || {}, item)),
+            deleteItem: id => {
                 emit(items[id], items[id] = null)
                 slots.push(id)
             }
