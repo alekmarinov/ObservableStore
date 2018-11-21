@@ -1,0 +1,29 @@
+{
+  "name": "@alekmarinov/observablestore",
+  "version": "1.0.0",
+  "description": "RxJS/Observable based memory store",
+  "author": "Alexander Marinov",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alekmarinov/ObservableStore.git"
+  },
+  "keywords": [
+    "javascript",
+    "rxjs",
+    "observable",
+    "memory",
+    "store"
+  ],
+  "bugs": {
+    "url": "https://github.com/alekmarinov/ObservableStore/issues"
+  },
+  "homepage": "https://github.com/alekmarinov/ObservableStore#readme",
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  }
+}
