@@ -40,7 +40,7 @@ module.exports = (allocSize = 0) => {
             /**
              * Creates new item in the store
              * @param {object} item object to add to store
-             * @returns {number} the item index in the store
+             * @returns {object} the item with added _index property pointing the same item in the store
              */
             createItem: item => {
                 assertArg("createItem", item, "object")
@@ -53,12 +53,13 @@ module.exports = (allocSize = 0) => {
                     _items.push(item)
                 }
                 emit(null, item)
-                return item._index
+                return item
             },
             /**
              * Updates item at specified index
              * @param {number} index in store to be updated
              * @param {object} item object used to update an existing item in the store.
+             * @returns {object} the updated item
              */
             updateItem: (index, item) => {
                 assertArg("updateItem", index, "number")
@@ -78,6 +79,7 @@ module.exports = (allocSize = 0) => {
                     }
                     emit(item, _items[index] = Object.assign(_items[index] || { _index: index }, item))
                 }
+                return _items[index]
             },
             /**
              * Deletes item at specified index

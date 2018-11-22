@@ -27,7 +27,7 @@ Creates new item in the store
 
 -   `item` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** object to add to store
 
-Returns **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** the item index in the store
+Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the item with added \_index property pointing the same item in the store
 
 ## updateItem
 
@@ -37,6 +37,8 @@ Updates item at specified index
 
 -   `index` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** in store to be updated
 -   `item` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** object used to update an existing item in the store.
+
+Returns **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)** the updated item
 
 ## deleteItem
 
